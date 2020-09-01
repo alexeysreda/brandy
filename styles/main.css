@@ -62,6 +62,8 @@ div {
   display: flex;
   align-items: stretch;
   justify-content: center;
+  border: 5px solid #fff;
+  border-radius: 5px;
 }
 div img {
   width: 100%;
@@ -113,9 +115,15 @@ div:not(.show):hover img {
   filter: blur(3px);
 }
 .header {
-  background: #f7edce;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%), url("../img/header-bg.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.header__wrapper {
   max-width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -142,7 +150,7 @@ div:not(.show):hover img {
 .line {
   height: 6px;
   width: 140px;
-  background: linear-gradient(to right, #70250b, #ac4421);
+  background: linear-gradient(to right, #fff, rgba(255,255,255,0.75));
   margin: 0 auto;
   bottom: -5px;
   left: 10px;
@@ -179,7 +187,7 @@ div:not(.show):hover img {
 .header__icon {
   width: 60px;
   height: 60px;
-  border: 2px solid #70250b;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -197,17 +205,32 @@ div:not(.show):hover img {
 .header__heading,
 .header__link,
 .header__text {
-  background: linear-gradient(to right, #70250b, #ac4421);
+  background: linear-gradient(to right, #fff, rgba(255,255,255,0.85));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
 h1 {
-  font-size: 52px;
+  font-size: 72px;
   font-weight: 900;
   letter-spacing: 1.1;
   display: inline-block;
+  line-height: 1.4em;
   text-align: center;
-  margin: 50px auto 0 auto;
+  margin: 160px auto 0 auto;
   width: 100%;
+}
+.link__order {
+  width: 240px;
+  height: 70px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 50px auto 0 auto;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
