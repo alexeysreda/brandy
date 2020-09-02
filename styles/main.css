@@ -51,7 +51,7 @@ body {
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
 }
-div {
+.portfolio div {
   text-align: center;
   color: #fff;
   font-size: 3rem;
@@ -65,7 +65,7 @@ div {
   border: 5px solid #fff;
   border-radius: 5px;
 }
-div img {
+.portfolio div img {
   width: 100%;
   height: 100%;
   display: block;
@@ -73,7 +73,7 @@ div img {
   object-position: center;
   transition: all 0.5s;
 }
-div.show::before {
+.portfolio div.show::before {
   content: '';
   display: block;
   position: fixed;
@@ -84,7 +84,7 @@ div.show::before {
   left: 0;
   background: rgba(0,0,0,0.6);
 }
-div.show img {
+.portfolio div.show img {
   position: fixed;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@ div.show img {
   filter: drop-shadow(0 3px 15px #000);
   cursor: url("../img/close.png"), grab; /* custom cursor to signal close on click */
 }
-div:not(.show):hover img {
+.portfolio div:not(.show):hover img {
   cursor: pointer;
   transform: scale(1.3);
 }
@@ -182,7 +182,8 @@ div:not(.show):hover img {
 }
 .header__link:hover .header__icon img,
 .header__link:focus .header__icon img {
-  transform: scale(1.3);
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
 }
 .header__icon {
   width: 60px;
@@ -214,7 +215,7 @@ div:not(.show):hover img {
 h1 {
   font-size: 72px;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   display: inline-block;
   line-height: 1.4em;
   text-align: center;

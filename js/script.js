@@ -1,5 +1,5 @@
 
-const divs = document.querySelectorAll('div');
+const divs = document.querySelectorAll('.portfolio div');
 const body = document.body;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
